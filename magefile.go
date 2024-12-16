@@ -190,6 +190,8 @@ func Proto() error {
 		return err
 	}
 
+	fmt.Println("proto generation complete")
+
 	return nil
 }
 
