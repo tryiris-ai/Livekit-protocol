@@ -169,6 +169,7 @@ func Proto() error {
 	}
 	psrpcPath, err := mageutil.GetToolPath("protoc-gen-psrpc")
 	fmt.Println("psrpcPath", psrpcPath)
+
 	if err != nil {
 		return err
 	}
