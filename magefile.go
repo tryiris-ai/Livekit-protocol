@@ -163,10 +163,12 @@ func Proto() error {
 	fmt.Println("generating psrpc protobuf")
 
 	psrpcDir, err := mageutil.GetPkgDir("github.com/livekit/psrpc")
+	fmt.Println("psrpcDir", psrpcDir)
 	if err != nil {
 		return err
 	}
 	psrpcPath, err := mageutil.GetToolPath("protoc-gen-psrpc")
+	fmt.Println("psrpcPath", psrpcPath)
 	if err != nil {
 		return err
 	}
